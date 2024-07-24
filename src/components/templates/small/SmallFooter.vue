@@ -24,13 +24,13 @@ onBeforeRouteUpdate(() => {
       <i class="mdi mdi-home-outline" />
       Home
     </RouterLink>
-    <RouterLink to="/">
-      <i class="mdi mdi-account-circle-outline" />
-      Perfil
+    <RouterLink to="/cores">
+      <i/>
+      Cor
     </RouterLink>
-    <RouterLink to="/">
-      <i class="mdi mdi-cart-outline" />
-      Carrinho
+    <RouterLink to="/acessorios">
+      <i/>
+      Acessorios
     </RouterLink>
 
     <div class="hamburger" @click="showMenu = !showMenu">
