@@ -45,7 +45,7 @@ async function excluir(id) {
   </div>
   <ul>
     <li v-for="categoria in categorias" :key="categoria.id" class="itens">
-      <span @click="editar(categoria)">
+      <span @click="editar(categoria)" class="nomes">
         |{{ categoria.id }}| {{ categoria.descricao }} 
       </span>
       <button @click="excluir(categoria.id)" class="botaoX icon mdi mdi-delete"></button>
@@ -79,5 +79,8 @@ input{
   font-size: 25px;
   border: 0px;
   cursor: pointer;
+}
+.nomes{
+  font-size: large;
 }
 </style>

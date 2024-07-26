@@ -45,7 +45,7 @@ async function excluir(id) {
   </div>
   <ul>
     <li v-for="cor in cores" :key="cor.id" class="itens">
-      <span @click="editar(cor)">
+      <span @click="editar(cor)" class="nomes">
         |{{ cor.id }}| {{ cor.nome }} 
       </span>
       <button @click="excluir(cor.id)" class="botaoX icon mdi mdi-delete"></button>
@@ -80,5 +80,8 @@ input{
   font-size: 25px;
   border: 0px;
   cursor: pointer;
+}
+.nomes{
+  font-size: large;
 }
 </style>

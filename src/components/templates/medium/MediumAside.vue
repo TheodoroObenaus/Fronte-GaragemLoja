@@ -25,7 +25,7 @@ import LogoTitle from '@/components/templates/LogoTitle.vue';
         <i class="icon mdi mdi-palette"/> Cor
       </router-link>
       <router-link to="/acessorios">
-        <i class="icon mdi mdi-car-seat"/> Acessorios
+        <i class="icon mdi mdi-engine"/> Acessorios
       </router-link>
       <router-link to="/login">
         <i class="icon mdi mdi-login" /> Login
