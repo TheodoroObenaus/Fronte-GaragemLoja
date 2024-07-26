@@ -14,23 +14,27 @@ onBeforeRouteUpdate(() => {
       <i class="mdi mdi-home-outline" />
       Home
     </RouterLink>
-    <RouterLink to="/login">
-      <i class="mdi mdi-account" />
-      Login
-    </RouterLink>
+    <router-link to="/marcas">
+        <i class="icon mdi mdi-car-lifted-pickup"/> Marca
+      </router-link>
+      <router-link to="/categorias">
+        <i class="icon mdi mdi-car-sports"/> Categoria
+      </router-link>
+      <router-link to="/Cores">
+        <i class="icon mdi mdi-palette"/> Cor
+      </router-link>
+      <router-link to="/acessorios">
+        <i class="icon mdi mdi-engine"/> Acessorios
+      </router-link>
   </div>
   <div class="icons">
     <RouterLink to="/">
       <i class="mdi mdi-home-outline" />
       Home
     </RouterLink>
-    <RouterLink to="/cores">
-      <i/>
-      Cor
-    </RouterLink>
-    <RouterLink to="/acessorios">
-      <i/>
-      Acessorios
+    <RouterLink to="/login">
+      <i class="mdi mdi-account" />
+      Login
     </RouterLink>
 
     <div class="hamburger" @click="showMenu = !showMenu">
@@ -45,7 +49,7 @@ onBeforeRouteUpdate(() => {
     bottom: 15%;
     right: 0;
 
-    width: 20%;
+    width: 30%;
     border-top: #EEEEEE 1px solid;
     background-color: white;
 
@@ -58,7 +62,7 @@ onBeforeRouteUpdate(() => {
     width: 100%;
     justify-content: space-between;
     text-decoration: none;
-    color: #282828;
+    color: #65007c;
     font-size: 1rem;
     transition: color 0.3s;
 }
@@ -69,6 +73,7 @@ onBeforeRouteUpdate(() => {
     width: 100%;
     align-items: center;
     justify-content: space-between;
+    color: #65007c;
 }
 
 .icons a,
@@ -77,7 +82,7 @@ onBeforeRouteUpdate(() => {
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    color: #282828;
+    color: #65007c;
     font-size: 1rem;
     transition: color 0.3s;
 }
