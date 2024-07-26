@@ -12,11 +12,17 @@ import LogoTitle from '@/components/templates/LogoTitle.vue';
     </div>
     <div class="divider" />
     <div class="menu">
+      <router-link to="/marcas">
+        <i class="icon mdi mdi-car-lifted-pickup"/> Marca
+      </router-link>
+      <router-link to="/categorias">
+        <i class="icon mdi mdi-car-sports"/> Categoria
+      </router-link>
       <router-link to="/Cores">
-        <i/> Cor
+        <i class="icon mdi mdi-palette"/> Cor
       </router-link>
       <router-link to="/acessorios">
-        <i/> Acessorios
+        <i class="icon mdi mdi-car-seat"/> Acessorios
       </router-link>
       <router-link to="/login">
         <i class="icon mdi mdi-account" /> Login

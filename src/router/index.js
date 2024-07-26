@@ -34,6 +34,16 @@ const router = createRouter({
           path: "/cores",
           name: "cor",
           component: () => import('@/views/CorView.vue'),
+        },
+        {
+          path: "/categorias",
+          name: "categoria",
+          component: () => import('@/views/CategoriaView.vue'),
+        },
+        {
+          path: "/marcas",
+          name: "marca",
+          component: () => import('@/views/MarcaView.vue'),
         }
       ],
     },
