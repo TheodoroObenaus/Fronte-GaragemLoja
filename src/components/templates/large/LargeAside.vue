@@ -9,9 +9,9 @@ import LogoTitle from '@/components/templates/LogoTitle.vue';
       <router-link to="/">
         <i class="icon mdi mdi-home-outline" /> Home
       </router-link>
-      <router-link to="/perfil">
+     <router-link to="/perfil">
         <i class="icon mdi mdi-account-circle" /> Perfil
-      </router-link>
+      </router-link> 
     </div>
     <div class="divider" />
     <div class="menu">

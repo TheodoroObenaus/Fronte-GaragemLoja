@@ -36,7 +36,10 @@ onBeforeRouteUpdate(() => {
       <i class="mdi mdi-account" />
       Login
     </RouterLink>
-
+    <router-link to="/perfil">
+        <i class="icon mdi mdi-account-circle" /> Perfil
+      </router-link> 
+      
     <div class="hamburger" @click="showMenu = !showMenu">
       <i class="mdi mdi-menu" />
       Menu
