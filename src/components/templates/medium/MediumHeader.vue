@@ -12,5 +12,6 @@
   gap: 1rem;
   align-items: center;
   font-size: 1.7rem;
+  color: #65007c;
 }
 </style>

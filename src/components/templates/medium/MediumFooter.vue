@@ -18,10 +18,11 @@
   display: flex;
   gap: 4rem;
   font-size: 1.2rem;
+  color: #65007c;
 }
 
 .links a {
-  color: #000;
+  color: #65007c;
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -32,5 +33,6 @@
   gap: 4rem;
   align-items: center;
   font-size: 2.2rem;
+  color: #65007c;
 }
 </style>

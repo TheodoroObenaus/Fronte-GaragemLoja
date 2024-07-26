@@ -9,21 +9,30 @@ import LogoTitle from '@/components/templates/LogoTitle.vue';
       <router-link to="/">
         <i class="icon mdi mdi-home-outline" /> Home
       </router-link>
+      <router-link to="/perfil">
+        <i class="icon mdi mdi-account-circle" /> Perfil
+      </router-link>
     </div>
     <div class="divider" />
     <div class="menu">
+      <router-link to="/marcas">
+        <i class="icon mdi mdi-car-lifted-pickup"/> Marca
+      </router-link>
+      <router-link to="/categorias">
+        <i class="icon mdi mdi-car-sports"/> Categoria
+      </router-link>
       <router-link to="/Cores">
-        <i/> Cor
+        <i class="icon mdi mdi-palette"/> Cor
       </router-link>
       <router-link to="/acessorios">
-        <i/> Acessorios
+        <i class="icon mdi mdi-car-seat"/> Acessorios
       </router-link>
       <router-link to="/login">
-        <i class="icon mdi mdi-account" /> Login
+        <i class="icon mdi mdi-login" /> Login
       </router-link>
     </div>
   </div>
-  <logo-title />
+  <logo-title/>
 </template>
 <style scoped>
 .mb-2 {
@@ -34,12 +43,9 @@ import LogoTitle from '@/components/templates/LogoTitle.vue';
   font-size: 2rem;
   align-self: center;
 }
-
 .divider {
-  margin-top: 1rem;
-  border-top: 1px solid #eeeeee;
+  border-top: 1rem solid #65007c;
 }
-
 .menu {
   padding: 3rem;
 }
@@ -48,7 +54,7 @@ import LogoTitle from '@/components/templates/LogoTitle.vue';
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #000000;
+  color: #65007c;
   gap: 1rem;
   font-size: 1.3rem;
   margin-top: 2.2rem;
