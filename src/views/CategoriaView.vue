@@ -38,21 +38,46 @@ async function excluir(id) {
 
 <template>
   <h1>Categoria</h1>
-  <hr />
   <div class="form">
     <input type="text" v-model="categoria.descricao" placeholder="Descrição" />
-    <button @click="salvar">Salvar</button>
-    <button @click="limpar">Limpar</button>
+    <button @click="salvar" class="botao">Salvar</button>
+    <button @click="limpar" class="botao">Limpar</button>
   </div>
-  <hr />
   <ul>
-    <li v-for="categoria in categorias" :key="categoria.id">
+    <li v-for="categoria in categorias" :key="categoria.id" class="itens">
       <span @click="editar(categoria)">
         |{{ categoria.id }}| {{ categoria.descricao }} 
       </span>
-      <button @click="excluir(categoria.id)">X</button>
+      <button @click="excluir(categoria.id)" class="botaoX icon mdi mdi-delete"></button>
     </li>
   </ul>
 </template>
 
-<style></style>
+<style scoped>
+input{
+  border: 3px solid #65007c;
+  border-radius: 10px;
+}
+.itens{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+
+.botao{
+  background-color: #65007c;
+  border: 0px;
+  border-radius: 10px;
+  font-size: large;
+  color: white;
+}
+.botaoX{
+  margin-left: 10px;
+  color: red;
+  background-color: white;
+  font-size: 25px;
+  border: 0px;
+  cursor: pointer;
+}
+</style>

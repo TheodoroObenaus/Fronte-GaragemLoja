@@ -1,15 +1,15 @@
 <script setup></script>
 <template>
-  <div class="links">
-    <RouterLink to="/">Help</RouterLink>
-    <RouterLink to="/">Contact Us</RouterLink>
-    <RouterLink to="/">Privacy & Terms</RouterLink>
-  </div>
-  <div class="icons">
-    <i class="mdi mdi-facebook" />
-    <i class="mdi mdi-twitter" />
-    <i class="mdi mdi-instagram" />
-  </div>
+    <div class="links">
+      <RouterLink to="/">Help</RouterLink>
+      <RouterLink to="/">Contact Us</RouterLink>
+      <RouterLink to="/">Privacy & Terms</RouterLink>
+    </div>
+    <div class="icons">
+      <i class="mdi mdi-facebook" />
+      <i class="mdi mdi-twitter" />
+      <i class="mdi mdi-instagram" />
+    </div>
 </template>
 <style scoped>
 .links {
@@ -18,7 +18,7 @@
   width: 100%;
   gap: 4rem;
   font-size: 1.2rem;
-  color: #000;
+  color: #65007c;
 }
 
 .links a {
@@ -30,5 +30,6 @@
   display: flex;
   gap: 4rem;
   font-size: 2.2rem;
+  color: #65007c;
 }
 </style>

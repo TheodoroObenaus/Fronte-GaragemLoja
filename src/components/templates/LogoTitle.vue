@@ -12,6 +12,7 @@
   padding-left: 3rem;
   gap: 1rem;
   align-items: center;
+  color: #65007c;
 }
 
 .logo img {

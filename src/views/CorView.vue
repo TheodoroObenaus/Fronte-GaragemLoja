@@ -38,22 +38,47 @@ async function excluir(id) {
 
 <template>
   <h1>Cor</h1>
-  <hr />
   <div class="form">
     <input type="text" v-model="cor.nome" placeholder="Nome" />
-    <button @click="salvar">Salvar</button>
-    <button @click="limpar">Limpar</button>
+    <button @click="salvar" class="botao">Salvar</button>
+    <button @click="limpar" class="botao">Limpar</button>
   </div>
-  <hr />
   <ul>
-    <li v-for="cor in cores" :key="cor.id">
+    <li v-for="cor in cores" :key="cor.id" class="itens">
       <span @click="editar(cor)">
         |{{ cor.id }}| {{ cor.nome }} 
       </span>
-      <button @click="excluir(cor.id)">X</button>
+      <button @click="excluir(cor.id)" class="botaoX icon mdi mdi-delete"></button>
     </li>
   </ul>
 </template>
 
 
-<style></style>
+<style scoped>
+input{
+  border: 3px solid #65007c;
+  border-radius: 10px;
+}
+.itens{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+
+.botao{
+  background-color: #65007c;
+  border: 0px;
+  border-radius: 10px;
+  font-size: large;
+  color: white;
+}
+.botaoX{
+  margin-left: 10px;
+  color: red;
+  background-color: white;
+  font-size: 25px;
+  border: 0px;
+  cursor: pointer;
+}
+</style>
