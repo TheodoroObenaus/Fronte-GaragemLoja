@@ -30,7 +30,7 @@ onMounted(() => {
     <h1>Perfil</h1>
     <div v-if="authStore.loggedIn" class="email">
       {{ authStore.user.email }} 
-    <router-link  to="/logout">Sair</router-link> 
+    <router-link v-if="authStore.loggedIn" to="/logout">Sair</router-link> 
     </div>
   </div>
 </template>
